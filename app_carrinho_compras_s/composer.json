@@ -1,0 +1,17 @@
+{
+    "name": "davig/app_carrinho_compras",
+    "type": "project",
+   
+    "authors": [
+        {
+            "name": "Davi Gledson",
+            "email": "davigledson@outlook.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\" : "src/"
+        }
+    }
+}

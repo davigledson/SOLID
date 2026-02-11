@@ -6,6 +6,8 @@ use App\CarrinhoComprar;
 
 
 $carrinho1 = new CarrinhoComprar();
+echo '<h3>sem SRP</h3>';
+
 echo 'Valor Total ' . $carrinho1->exibirValorTotal();
 echo '<br/>';
 
