@@ -33,7 +33,7 @@ public function itemValido(){
         return false;
     }
 
-    if($this->valor <= ''){
+    if($this->valor <= 0){
         return false;
     }
     return true;
