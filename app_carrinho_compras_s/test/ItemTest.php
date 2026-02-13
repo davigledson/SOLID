@@ -2,10 +2,12 @@
 
 use PHPUnit\Framework\TestCase;
 use App\Item;
+use PHPUnit\Framework\Attributes\DataProvider;
+
 class ItemTest extends TestCase {
 
 
-
+ 
 public function testEstadoInicialItem(){
     $item = new Item();
     //$item->getDescricao() == '';
@@ -25,12 +27,6 @@ public function testGetSetDescricao(){
     $this->assertEquals($descricao,$item->getDescricao());
 }
 
-public function testGetSetValor(){
-    $valor = 35;
-    $item = new Item();
-    $item->setValor($valor);
-    $this->assertEquals($valor,$item->getValor());
-}
 
 public function testItemValido(){
         //seria submeter um item invalido para o teste e retonar ok
@@ -61,6 +57,24 @@ public function testItemValido(){
 
 
     }
+
+   #[DataProvider('dataValores')]
+    public function testGetSetValor($valor){
+  
+    $item = new Item();
+    $item->setValor($valor);
+    $this->assertEquals($valor,$item->getValor());
+}
+
+
+    public static function dataValores(){
+    return [
+        [100],
+        [-2],
+        [0]
+    ];
+}
+
     
 }
 
