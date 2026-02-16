@@ -28,7 +28,18 @@ class Leitor {
         $caminho = $this->getDiretorio().DIRECTORY_SEPARATOR .$this->getArquivo();
 
         $arquivo = new Arquivo();
+        $extensao = explode('.',$this->getArquivo());
+
+        if($extensao[1] =='csv'){
         $arquivo->lerArquivoCSV($caminho);
+
+        } else if($extensao[1] == 'txt'){
+        $arquivo->lerArquivoTXT($caminho);
+        }
+        
+        
+
+
         return  $arquivo->getDados();
     }
 
