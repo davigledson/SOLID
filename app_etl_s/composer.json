@@ -1,0 +1,15 @@
+{
+    "name": "davig/app_etl",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Davi Gledson",
+            "email": "davigledson@outlook.com"
+        }
+    ],
+    "require": {}
+}
