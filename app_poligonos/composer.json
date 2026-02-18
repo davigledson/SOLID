@@ -1,0 +1,16 @@
+{
+    "name": "davig/app_poligonos",
+    "type": "projetc",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Davi Gledson",
+            "email": "davigledson@outlook.com"
+        }
+    ],
+    "require": {}
+}
