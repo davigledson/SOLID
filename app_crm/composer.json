@@ -1,0 +1,15 @@
+{
+    "name": "davig/app_crm",
+    "autoload": {
+        "psr-4": {
+            "src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Davi Gledson",
+            "email": "davigledson@outlook.com"
+        }
+    ],
+    "require": {}
+}
